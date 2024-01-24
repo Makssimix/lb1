@@ -1,0 +1,44 @@
+body {
+    background-color: azure;
+}
+
+#title {
+    background-color: #CCFFCC;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+  
+}
+
+.block {
+    background-color: blanchedalmond;
+    padding: 20px;
+}
+
+.individual {
+    background-color: #FFCCCC;
+    padding: 20px; 
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+}
+
+.element {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #000066;
+}
+
+.longelement {
+    height: 200px;
+    width: 100px;
+    margin: 10px;
+    background-color: #000066;
+}
