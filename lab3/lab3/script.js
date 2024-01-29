@@ -6,7 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const heightInput = document.getElementById("heightInput");
     const borderWidthInput = document.getElementById("borderWidthInput");
     const altTextInput = document.getElementById("altTextInput");
+    const borderColorInput = document.getElementById("borderColorInput");
   
+
+    
     function updateSelectedImage() {
       const selectedImage = document.querySelector(".selected");
       if (selectedImage) {
@@ -14,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         selectedImage.style.height = heightInput.value + "px";
         selectedImage.style.borderWidth = borderWidthInput.value + "px";
         selectedImage.alt = altTextInput.value;
+        selectedImage.style.color = borderColorInput.value + "#"; 
       }
     }
   
@@ -21,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     heightInput.addEventListener("input", updateSelectedImage);
     borderWidthInput.addEventListener("input", updateSelectedImage);
     altTextInput.addEventListener("input", updateSelectedImage);
+    borderColorInput.addEventListener("input", updateSelectedImage);
   
     upButton.addEventListener("click", function () {
       const selectedImage = document.querySelector(".selected");
@@ -53,6 +58,9 @@ document.addEventListener("DOMContentLoaded", function () {
         heightInput.value = image.height;
         borderWidthInput.value = parseInt(window.getComputedStyle(image).borderWidth);
         altTextInput.value = image.alt;
+        
       });
     });
-});
+
+
+  });

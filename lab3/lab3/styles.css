@@ -4,7 +4,7 @@ body {
 }
   
 #gallery {
-    display: flex;
+    display: line;
     flex-direction: column;
     margin-bottom: 10px;
     align-items: center;
@@ -14,7 +14,7 @@ img {
     width: 10%;
     height: auto;
     margin: 25px;
-    border: 10px solid #ccc;
+    border: 10px solid #00c;
 }
   
 button {
@@ -26,4 +26,12 @@ button {
 #buttons {
     text-align: center;
 }
-  
+
+.image-container {
+    display: flex;
+    gap: 10px;
+}
+
+.image {
+    border: 2px solid #000; /* чёрная рамка */
+    padding: 5px;
